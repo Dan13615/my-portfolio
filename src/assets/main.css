@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+    background-color: rgb(12, 12, 12);
+}
+
+a,
+.orange {
+    color: rgb(242, 97, 63);
+}
+
+a:hover {
+    background-color: rgb(72, 30, 20);
+}
+
+p {
+    color: rgb(242, 97, 63);
+}
