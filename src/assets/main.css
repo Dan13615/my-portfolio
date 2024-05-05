@@ -3,12 +3,13 @@
 @tailwind utilities;
 
 #app {
-    background-color: rgb(12, 12, 12);
+    background-image: url('../assets/bg-electronics.jpg');
+    background-size: cover;
 }
 
-a,
-.orange {
-    color: rgb(242, 97, 63);
+a {
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a:hover {
@@ -16,5 +17,6 @@ a:hover {
 }
 
 p {
-    color: rgb(242, 97, 63);
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
