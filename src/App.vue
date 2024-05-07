@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router';
 </script>
 
 <template>
-    <div class="md:text-xs lg:text-xl">
+    <div class="text-sm lg:text-xl">
         <header class="p-2 w-full flex flex-row justify-between fixed">
             <div>
                 <RouterLink to="/" class="font-bold">HOME</RouterLink>
@@ -16,7 +16,7 @@ import { RouterLink, RouterView } from 'vue-router';
             </div>
         </header>
     </div>
-    <div class="min-h-screen flex justify-center transition-all pt-64">
+    <div class="min-h-screen flex justify-center transition-all padd">
         <RouterView />
     </div>
 </template>
@@ -28,5 +28,15 @@ header {
 
 nav {
     color: #eeeeee;
+}
+
+.padd {
+    padding-top: 8rem;
+}
+
+@media (min-width: 1024px) {
+    .padd {
+        padding-top: 16rem;
+    }
 }
 </style>
