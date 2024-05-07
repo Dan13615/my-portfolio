@@ -3,20 +3,21 @@
 @tailwind utilities;
 
 #app {
-    background-image: url('../assets/bg-electronics.jpg');
+    background-color: #2b2a2a;
     background-size: cover;
 }
 
 a {
-    color: rgb(0, 0, 0);
+    color: #eeeeee;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a:hover {
-    background-color: rgb(72, 30, 20);
+    color: #929aab;
+    font-weight: bold;
 }
 
 p {
-    color: rgb(0, 0, 0);
+    color: #eeeeee;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
