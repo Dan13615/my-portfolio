@@ -5,7 +5,8 @@ export default {
             name: '',
             email: '',
             message: '',
-            windowWidth: 0
+            windowWidth: 0,
+            my_email: 'daniil.stepanov@epitech.eu'
         };
     },
     methods: {
@@ -58,7 +59,10 @@ export default {
             <div class="px-10" v-show="isNotSmallScreen"></div>
 
             <div>
-                <p class="font-bold text-3xl md:text-5xl lg:text-7xl">Contact <span class="span">Me !</span></p>
+                <p class="font-bold text-4xl md:text-6xl lg:text-8xl">Contact <span class="span">Me !</span></p>
+                <p class="py-10 text-lg md:text-xl lg:text-2xl">
+                    my mail : <a class="span" :href="`mailto:${my_email}`"> {{ my_email }} </a>
+                </p>
             </div>
         </div>
     </ContactItem>

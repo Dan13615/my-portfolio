@@ -12,6 +12,10 @@ export default {
 
     data() {
         return {
+            name: 'Daniil Stepanov',
+            poste: 'Embedded Software Developper',
+            passion: 'low level programming, embedded systems and Linux systems',
+            goals: 'an internship',
             windowWidth: 0
         };
     },
@@ -40,12 +44,18 @@ export default {
         <div class="centered-container">
             <div class="content-container">
                 <div>
-                    <p class="text-xl md:text-xl lg:text-5xl">Hello I'm</p>
-                    <p class="text-2xl md:text-4xl lg:text-7xl">Daniil Stepanov</p>
-                    <p class="text-sm md:text-lg lg:text-4xl">I'm a <span class="span">embedded software developper</span></p>
+                    <div>
+                        <p class="text-xl md:text-xl lg:text-5xl">Hello I'm</p>
+                        <p class="text-2xl md:text-4xl lg:text-7xl">{{ name }}</p>
+                        <p class="text-sm md:text-lg lg:text-4xl">
+                            I'm a <span class="span">{{ poste }}</span>
+                        </p>
+                    </div>
 
-                    <p class="text-xs md:text-sm lg:text-base">I am passionate about <b>low level programming</b>, <b>embedded systems</b> and <b>Linux systems</b>.</p>
-                    <p class="text-xs md:text-sm lg:text-base">I am currently looking for an internship in these fields.</p>
+                    <div class="py-10">
+                        <p class="text-xs md:text-sm lg:text-base">I am passionnate about {{ passion }}.</p>
+                        <p class="text-xs md:text-sm lg:text-base">I am currently looking for {{ goals }} in these fields.</p>
+                    </div>
                 </div>
 
                 <div class="px-10" v-show="isNotSmallScreen"></div>
