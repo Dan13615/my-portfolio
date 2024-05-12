@@ -8,12 +8,14 @@
 
         <div class="projects">
             <LFSProject />
+            <CLibrary />
         </div>
     </main>
 </template>
 
 <script setup>
 import LFSProject from '@/components/LFS-Project.vue';
+import CLibrary from '@/components/C-Library.vue';
 </script>
 
 <style scoped>
