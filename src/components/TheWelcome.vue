@@ -140,6 +140,7 @@ export default {
 @media (max-width: 1024px) {
     .content-container {
         flex-direction: column;
+        text-align: center;
     }
 
     .button {
