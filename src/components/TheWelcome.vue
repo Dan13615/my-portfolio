@@ -14,8 +14,8 @@ export default {
         return {
             name: 'Daniil Stepanov',
             poste: 'Embedded Software Developper',
-            passion: 'low level programming, embedded systems and Linux systems',
-            goals: 'an internship',
+            aboutme: 'As an Embedded Software Developer, I thrive on the intricacies of low-level programming, the challenges of embedded systems, and the versatility of Linux environments. My passion lies in crafting efficient, robust software solutions that power the next generation of technological advancements.',
+            exp: 'In my journey as a software developer, I have honed my skills through hands-on experience and academic pursuits. From designing firmware for microcontrollers to optimizing system performance on Linux platforms, I have tackled diverse projects that have deepened my understanding of embedded systems.',
             windowWidth: 0
         };
     },
@@ -43,7 +43,7 @@ export default {
     <WelcomeItem>
         <div class="centered-container">
             <div class="content-container">
-                <div>
+                <div class="text-container">
                     <div>
                         <p class="text-xl md:text-xl lg:text-5xl">Hello I'm</p>
                         <p class="text-2xl md:text-4xl lg:text-7xl">{{ name }}</p>
@@ -52,28 +52,49 @@ export default {
                         </p>
                     </div>
 
-                    <div class="py-10">
-                        <p class="text-xs md:text-sm lg:text-base">I am passionnate about {{ passion }}.</p>
-                        <p class="text-xs md:text-sm lg:text-base">I am currently looking for {{ goals }} in these fields.</p>
+                    <div class="sections-container">
+                        <p class="title text-xl md:text-xl lg:text-5xl font-bold">About Me:</p>
+                        <p class="text-xs md:text-sm lg:text-base">{{ aboutme }}</p>
                     </div>
+
+                    <div class="sections-container">
+                        <p class="title text-xl md:text-xl lg:text-5xl font-bold">Experience:</p>
+                        <p class="text-xs md:text-sm lg:text-base">{{ exp }}</p>
+                    </div>
+
+                    <div class="sections-container">
+                        <p class="title text-xl md:text-xl lg:text-5xl font-bold">Skills:</p>
+                        <li class="text-xs md:text-sm lg:text-base">Proficient in C/C++ for low-level programming.</li>
+                        <li class="text-xs md:text-sm lg:text-base">Extensive experience with embedded systems development.</li>
+                        <li class="text-xs md:text-sm lg:text-base">Strong knowledge of Linux kernel and device drivers.</li>
+                        <li class="text-xs md:text-sm lg:text-base">Familiarity with hardware interfaces and protocols.</li>
+                        <li class="text-xs md:text-sm lg:text-base">Skilled in debugging and troubleshooting complex issues.</li>
+                        <li class="text-xs md:text-sm lg:text-base">Adaptable problem solver with a keen eye for optimization.</li>
+                    </div>
+                    <br />
+                    <br />
+                    <br />
                 </div>
 
                 <div class="px-10" v-show="isNotSmallScreen"></div>
 
-                <div class="flex-1 text-center">
-                    <a class="social-media" href="https://www.facebook.com/daniil.stepanov.311">
-                        <font-awesome-icon :icon="['fab', 'facebook-f']" />
-                    </a>
-                    <a class="social-media" href="https://www.instagram.com/dan13615_/">
-                        <font-awesome-icon :icon="['fab', 'instagram']" />
-                    </a>
-                    <a class="social-media" href="https://www.linkedin.com/in/daniil-stepanov-89a98715a">
-                        <font-awesome-icon :icon="['fab', 'linkedin']" />
-                    </a>
-                    <a class="social-media" href="https://www.github.com/Dan13615/">
-                        <font-awesome-icon :icon="['fab', 'github']" />
-                    </a>
-                    <a href="#" class="button">Download CV</a>
+                <div class="assets-container flex-1 text-center">
+                    <div class="social-media-links">
+                        <p class="text-xl md:text-xl lg:text-5xl">My social links :</p>
+                        <a class="social-media" href="https://www.facebook.com/daniil.stepanov.311">
+                            <font-awesome-icon :icon="['fab', 'facebook-f']" />
+                        </a>
+                        <a class="social-media" href="https://www.instagram.com/dan13615_/">
+                            <font-awesome-icon :icon="['fab', 'instagram']" />
+                        </a>
+                        <a class="social-media" href="https://www.linkedin.com/in/daniil-stepanov-89a98715a">
+                            <font-awesome-icon :icon="['fab', 'linkedin']" />
+                        </a>
+                        <a class="social-media" href="https://www.github.com/Dan13615/">
+                            <font-awesome-icon :icon="['fab', 'github']" />
+                        </a>
+                    </div>
+                    <a href="/src/assets/cv-daniil.pdf" download="CV-Daniil-Stepanov" class="button">Download CV</a>
                 </div>
             </div>
         </div>
@@ -89,8 +110,30 @@ export default {
     padding-right: 10%;
 }
 
+.text-container {
+    width: 50%;
+}
+
+.assets-container {
+    position: fixed;
+    right: 0;
+    left: 50%;
+    top: 55%;
+    transform: translateY(-60%);
+}
+
+.sections-container {
+    margin-top: 5rem;
+}
+
 .span {
     color: #0ef;
+}
+
+.title {
+    color: #0ef;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 .social-media {
@@ -175,6 +218,18 @@ export default {
         background: #0ef;
         color: rgb(255, 255, 255);
         box-shadow: 0 0 1rem #0ef;
+    }
+
+    .text-container {
+        width: 100%;
+    }
+
+    .assets-container {
+        position: relative;
+        right: 0;
+        left: 0;
+        top: 0;
+        transform: translateY(0);
     }
 }
 </style>
