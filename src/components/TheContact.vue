@@ -117,14 +117,18 @@ export default {
     margin-top: 2rem;
 }
 
+.button:hover {
+    box-shadow: none;
+}
+
 @media (max-width: 1024px) {
     .centered-container {
         flex-direction: column-reverse;
+        text-align: center;
     }
 
     .contact form {
         text-align: center;
-        margin-top: 2rem;
     }
 
     .button {

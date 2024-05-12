@@ -55,6 +55,10 @@ export default {
     transition: 0.5s ease;
 }
 
+.button:hover {
+    box-shadow: none;
+}
+
 .picture {
     margin: 1rem;
     width: 60%;
