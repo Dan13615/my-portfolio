@@ -9,6 +9,7 @@
         <div class="projects">
             <LFSProject />
             <CLibrary />
+            <TututMobile />
         </div>
     </main>
 </template>
@@ -16,6 +17,7 @@
 <script setup>
 import LFSProject from '@/components/LFS-Project.vue';
 import CLibrary from '@/components/C-Library.vue';
+import TututMobile from '@/components/TututMobile.vue';
 </script>
 
 <style scoped>
