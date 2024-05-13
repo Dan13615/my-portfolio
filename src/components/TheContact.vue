@@ -59,9 +59,9 @@ export default {
             <div class="px-10" v-show="isNotSmallScreen"></div>
 
             <div>
-                <p class="font-bold text-4xl md:text-6xl lg:text-8xl">Contact <span class="span">Me !</span></p>
+                <p class="font-bold text-4xl md:text-6xl lg:text-8xl">Contact <span class="text-primary">Me !</span></p>
                 <p class="py-10 text-lg md:text-xl lg:text-2xl">
-                    my mail : <a class="span" :href="`mailto:${my_email}`"> {{ my_email }} </a>
+                    my mail : <a class="text-primary" :href="`mailto:${my_email}`"> {{ my_email }} </a>
                 </p>
             </div>
         </div>
@@ -69,9 +69,6 @@ export default {
 </template>
 
 <style scoped>
-.span {
-    color: #0ef;
-}
 
 .centered-container {
     display: flex;

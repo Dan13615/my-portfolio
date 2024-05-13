@@ -1,25 +1,31 @@
 <template>
     <div class="box">
-        <p class="text-xl md:text-2xl lg:text-4xl pb-5 title">{{ project.title }}</p>
-        <p class="text-base md:text-lg lg:text-2xl">{{ project.description }}</p>
-        <img class="picture" :src="project.picture" alt="Project Picture" />
-        <a class="button text-base md:text-lg lg:text-2xl" :href="project.githubLink">GitHub Link</a>
+        <p class="text-xl md:text-2xl lg:text-4xl pb-5 font-bold text-primary">{{ props.title }}</p>
+        <p class="text-base md:text-lg lg:text-2xl">{{ props.description }}</p>
+        <img class="picture" :src="props.picture" alt="Project Picture" />
+        <a class="button text-base md:text-lg lg:text-2xl" :href="props.githubLink">GitHub Link</a>
     </div>
 </template>
 
-<script>
-export default {
-    data() {
-        return {
-            project: {
-                title: 'Linux From Scratch Project',
-                description: 'Linux From Scratch (LFS) is a project that provides you with step-by-step instructions for building your own custom Linux system, entirely from source code.',
-                githubLink: 'https://github.com/Dan13615',
-                picture: '/src/assets/lfs.png'
-            }
-        };
+<script setup>
+const props = defineProps({
+    title: {
+        type: String,
+        required: true
+    },
+    description: {
+        type: String,
+        required: true
+    },
+    githubLink: {
+        type: String,
+        default: 'https://github.com/Dan13615'
+    },
+    picture: {
+        type: String,
+        required: true
     }
-};
+});
 </script>
 
 <style scoped>
@@ -36,11 +42,6 @@ export default {
     border-radius: 0.8rem;
     margin: 1rem;
     resize: none;
-}
-
-.title {
-    color: #0ef;
-    font-weight: bold;
 }
 
 .button {

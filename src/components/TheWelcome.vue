@@ -48,22 +48,22 @@ export default {
                         <p class="text-xl md:text-xl lg:text-5xl">Hello I'm</p>
                         <p class="text-2xl md:text-4xl lg:text-7xl">{{ name }}</p>
                         <p class="text-sm md:text-lg lg:text-4xl">
-                            I'm a <span class="span">{{ poste }}</span>
+                            I'm a <span class="text-primary">{{ poste }}</span>
                         </p>
                     </div>
 
                     <div class="sections-container">
-                        <p class="title text-xl md:text-xl lg:text-5xl font-bold">About Me:</p>
+                        <p class="title text-primary text-xl md:text-xl lg:text-5xl font-bold">About Me:</p>
                         <p class="text-xs md:text-sm lg:text-base">{{ aboutme }}</p>
                     </div>
 
                     <div class="sections-container">
-                        <p class="title text-xl md:text-xl lg:text-5xl font-bold">Experience:</p>
+                        <p class="title text-primary text-xl md:text-xl lg:text-5xl font-bold">Experience:</p>
                         <p class="text-xs md:text-sm lg:text-base">{{ exp }}</p>
                     </div>
 
                     <div class="sections-container">
-                        <p class="title text-xl md:text-xl lg:text-5xl font-bold">Skills:</p>
+                        <p class="title text-primary text-xl md:text-xl lg:text-5xl font-bold">Skills:</p>
                         <li class="text-xs md:text-sm lg:text-base">Proficient in C/C++ for low-level programming.</li>
                         <li class="text-xs md:text-sm lg:text-base">Extensive experience with embedded systems development.</li>
                         <li class="text-xs md:text-sm lg:text-base">Strong knowledge of Linux kernel and device drivers.</li>
@@ -81,16 +81,16 @@ export default {
                 <div class="assets-container flex-1 text-center">
                     <div class="social-media-links">
                         <p class="text-xl md:text-xl lg:text-5xl">My social links :</p>
-                        <a class="social-media" href="https://www.facebook.com/daniil.stepanov.311">
+                        <a class="social-media text-primary" href="https://www.facebook.com/daniil.stepanov.311">
                             <font-awesome-icon :icon="['fab', 'facebook-f']" />
                         </a>
-                        <a class="social-media" href="https://www.instagram.com/dan13615_/">
+                        <a class="social-media text-primary" href="https://www.instagram.com/dan13615_/">
                             <font-awesome-icon :icon="['fab', 'instagram']" />
                         </a>
-                        <a class="social-media" href="https://www.linkedin.com/in/daniil-stepanov-89a98715a">
+                        <a class="social-media text-primary" href="https://www.linkedin.com/in/daniil-stepanov-89a98715a">
                             <font-awesome-icon :icon="['fab', 'linkedin']" />
                         </a>
-                        <a class="social-media" href="https://www.github.com/Dan13615/">
+                        <a class="social-media text-primary" href="https://www.github.com/Dan13615/">
                             <font-awesome-icon :icon="['fab', 'github']" />
                         </a>
                     </div>
@@ -126,19 +126,12 @@ export default {
     margin-top: 5rem;
 }
 
-.span {
-    color: #0ef;
-}
-
 .title {
-    color: #0ef;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .social-media {
-    color: #0ef;
-
     display: inline-flex;
     justify-content: center;
     align-items: center;
