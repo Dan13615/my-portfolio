@@ -94,7 +94,7 @@ export default {
                             <font-awesome-icon :icon="['fab', 'github']" />
                         </a>
                     </div>
-                    <a href="/src/assets/cv-daniil.pdf" download="CV-Daniil-Stepanov" class="button">Download CV</a>
+                    <a href="cv-daniil.pdf" download="CV-Daniil-Stepanov" class="button">Download CV</a>
                 </div>
             </div>
         </div>
