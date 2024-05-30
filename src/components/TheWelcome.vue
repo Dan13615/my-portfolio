@@ -1,15 +1,5 @@
 <script>
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faFacebookF, faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-
-library.add(faFacebookF, faInstagram, faLinkedin, faGithub);
-
 export default {
-    components: {
-        FontAwesomeIcon
-    },
-
     data() {
         return {
             name: 'Daniil Stepanov',
@@ -74,27 +64,6 @@ export default {
                     <br />
                     <br />
                     <br />
-                </div>
-
-                <div class="px-10" v-show="isNotSmallScreen"></div>
-
-                <div class="fixed left-2/3 top-1/2 flex-1 text-center">
-                    <div class="social-media-links mb-10">
-                        <p class="text-xl md:text-xl lg:text-5xl mb-10">My social links :</p>
-                        <a class="inline-flex justify-center items-center w-16 h-16 bg-transparent border-primary border-solid border-4 rounded-full m-3 text-4xl text-primary shadow-custom2 transition duration-150 ease-out hover:ease-in hover:shadow-none" href="https://www.facebook.com/daniil.stepanov.311">
-                            <font-awesome-icon :icon="['fab', 'facebook-f']" />
-                        </a>
-                        <a class="inline-flex justify-center items-center w-16 h-16 bg-transparent border-primary border-solid border-4 rounded-full m-3 text-4xl text-primary shadow-custom2 transition duration-150 ease-out hover:ease-in hover:shadow-none" href="https://www.instagram.com/dan13615_/">
-                            <font-awesome-icon :icon="['fab', 'instagram']" />
-                        </a>
-                        <a class="inline-flex justify-center items-center w-16 h-16 bg-transparent border-primary border-solid border-4 rounded-full m-3 text-4xl text-primary shadow-custom2 transition duration-150 ease-out hover:ease-in hover:shadow-none" href="https://www.linkedin.com/in/daniil-stepanov-89a98715a">
-                            <font-awesome-icon :icon="['fab', 'linkedin']" />
-                        </a>
-                        <a class="inline-flex justify-center items-center w-16 h-16 bg-transparent border-primary border-solid border-4 rounded-full m-3 text-4xl text-primary shadow-custom2 transition duration-150 ease-out hover:ease-in hover:shadow-none" href="https://www.github.com/Dan13615/">
-                            <font-awesome-icon :icon="['fab', 'github']" />
-                        </a>
-                    </div>
-                    <a href="cv-daniil.pdf" download="CV-Daniil-Stepanov" class="inline-block px-10 py-6 bg-primary rounded-full shadow-custom1 font-black text-3xl tracking-widest transition duration-150 ease-out hover:ease-in hover:shadow-none">Download CV</a>
                 </div>
             </div>
         </div>
