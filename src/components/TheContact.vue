@@ -11,7 +11,6 @@ const instagram = ref('https://www.instagram.com/dan13615_/');
 const facebook = ref('https://www.facebook.com/daniil.stepanov.311');
 const github = ref('https://www.github.com/Dan13615/');
 const linkedin = ref('https://www.linkedin.com/in/daniil-stepanov-89a98715a');
-const CV = ref('src/assets/cv-daniil.pdf');
 </script>
 
 <template>
@@ -35,7 +34,7 @@ const CV = ref('src/assets/cv-daniil.pdf');
                         <font-awesome-icon :icon="['fab', 'github']" />
                     </a>
                 </div>
-                <a :href="CV" download="CV-Daniil-Stepanov" class="inline-block px-10 py-6 bg-primary rounded-full shadow-custom2 font-black text-3xl tracking-widest transition duration-150 ease-out hover:ease-in hover:shadow-none">Download CV</a>
+                <a href="/cv-daniil.pdf" download="CV-Daniil-Stepanov" class="inline-block px-10 py-6 bg-primary rounded-full shadow-custom2 font-black text-3xl tracking-widest transition duration-150 ease-out hover:ease-in hover:shadow-none">Download CV</a>
                 <p class="py-10 text-lg md:text-xl lg:text-2xl">
                     <a class="text-primary" :href="`mailto:${my_email}`"> {{ email }} </a>
                 </p>
