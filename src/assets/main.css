@@ -3,26 +3,26 @@
 @tailwind utilities;
 
 #app {
-    background-color: #2b2a2a;
+    background-color: #101010;
     background-size: cover;
 }
 
 a {
-    color: #eeeeee;
+    color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a:hover {
-    color: #929aab;
+    color: #adb5bd;
     font-weight: bold;
 }
 
 p {
-    color: #eeeeee;
+    color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 li {
-    color: #eeeeee;
+    color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
